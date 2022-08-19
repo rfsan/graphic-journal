@@ -3,6 +3,15 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
+  const { og } = {
+    og: {
+      title: "Rafael's Graphic Journal",
+      description:
+        "Rafael's Graphic Journal. I use Text-to-Image models to create an image for my daily entries.",
+      url: "https://graphic-journal.vercel.app/",
+    },
+  };
+
   return (
     <>
       <Head>
@@ -15,20 +24,30 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           name="description"
           content="Rafael's Graphic Journal. I use Text-to-Image models to create an image for my daily entries."
         />
-        <meta property="og:title" content="Rafael's Graphic Journal" />
-        <meta property="og:url" content="https://graphic-journal.vercel.app/" />
+        {/* OG */}
+        <meta key="og:type" property="og:type" content="website" />
+        <meta key="og:title" property="og:title" content={og.title} />
         <meta
+          key="og:description"
           property="og:description"
-          content="description of your website/webpage"
+          content={og.description}
         />
+        <meta key="og:url" property="og:url" content={og.url} />
+        {/* OG Image */}
         <meta
+          key="og:image"
           property="og:image"
           content="https://graphic-journal.vercel.app/images/fuckoff.png"
         />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1024" />
+        <meta
+          key="image"
+          property="image"
+          content="https://graphic-journal.vercel.app/images/fuckoff.png"
+        />
+        {/* <meta property="og:image:type" content="image/png" /> */}
+        <meta property="og:image:width" content="1200" />
 
-        <meta property="og:image:height" content="1024" />
+        <meta property="og:image:height" content="630" />
       </Head>
       <Component {...pageProps} />;
     </>
