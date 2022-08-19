@@ -37,12 +37,12 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta
           key="og:image"
           property="og:image"
-          content="https://graphic-journal.vercel.app/images/fuckoff.png"
+          content="https://graphic-journal.vercel.app/images/delete-me4.jpg"
         />
         <meta
           key="image"
           property="image"
-          content="https://graphic-journal.vercel.app/images/fuckoff.png"
+          content="https://graphic-journal.vercel.app/images/delete-me4.jpg"
         />
         {/* <meta property="og:image:type" content="image/png" /> */}
         <meta property="og:image:width" content="1200" />
