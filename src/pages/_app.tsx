@@ -23,7 +23,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta
           property="og:image"
-          content="https://mywebsite.com/images/fuckoff.png"
+          content="https://graphic-journal.vercel.app/images/fuckoff.png"
         />
       </Head>
       <Component {...pageProps} />;
