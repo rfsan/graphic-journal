@@ -45,9 +45,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           content="https://graphic-journal.vercel.app/images/delete-me4.jpg"
         />
         {/* <meta property="og:image:type" content="image/png" /> */}
-        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:width" content="716" />
 
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image:height" content="716" />
       </Head>
       <Component {...pageProps} />;
     </>
