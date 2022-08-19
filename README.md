@@ -1,10 +1,14 @@
-<div align="center">
-    <h1>Next.js with Tailwind CSS Starter Template</h1>
-    <p>Next.js + TypeScript + Tailwind CSS</p>
-</div>
-
+# Graphic Journal
 
 ## TODO
-- Snippets
-- Prettier
-- ESLINT
+
+- Arreglar los meta tags y el head.
+- No aparece una imagen al compartir por WhatsApp.
+- Crear CMS.
+- Texto de la fecha a partir de una fecha numérica.
+
+## Ideas
+
+- Final de BCS
+- Dulce
+- Quiero publicar imágenes y no paralizarme pensando demasiado qué voy a generar. Empezar ya y mejorar en el camino.
