@@ -26,6 +26,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           itemProp="image"
           content="https://graphic-journal.vercel.app/images/fuckoff.png"
         />
+        <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1024" />
 
         <meta property="og:image:height" content="1024" />
