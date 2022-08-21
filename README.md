@@ -1,11 +1,17 @@
 # Graphic Journal
 
+## In this project
+
+- Head Component
+
 ## TODO
 
-- Arreglar los meta tags y el head.
-- No aparece una imagen al compartir por WhatsApp.
-- Crear CMS.
-- Texto de la fecha a partir de una fecha numérica.
+- (Hard) Crear una versión menos pesada de la última imagen para `og:image`.
+- Cuando haya varios posts:
+  - Crear CMS.
+  - Paginación.
+- Nice para practicar:
+  - Texto de la fecha a partir de una fecha numérica.
 
 ## Ideas
 
