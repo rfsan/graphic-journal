@@ -1,56 +1,54 @@
-import Image from "next/image";
-import { Header } from "@/components";
+import Image from "next/image"
+import { Header } from "@/components"
 
 export default function Home() {
   const cms = [
-    // {
-    //   date: "Tuesday, August 16, 2022",
-    //   title: "Mocho",
-    //   tags: "Juan, Entrepreneurship",
-    //   description:
-    //     "I decided to leave the project I've been working on for the last 8 months to focus on offering web development services as a freelancer. Juan made me realize that we were building a solution to a problem that neither we nor anyone close to us has.",
-    //   color: "text-[#FCE72D]",
-    //   image: {
-    //     src: "/images/mocho.png",
-    //     alt: "A sad flower because the sun is setting",
-    //     width: 1024,
-    //     height: 1024,
-    //   },
-    //   creation: {
-    //     model: "DALL-E 2",
-    //     prompt:
-    //       "A cute baby snake opening a new shoe store, the snake is happy and has a smile in his face, the background has a lot of sneakers, high detail, 3D digital art",
-    //     generations: "5",
-    //     cost: "$0.65 USD",
-    //   },
-    // },
-    // {
-    //   date: "Tuesday, August 16, 2022",
-    //   title: "Mocho",
-    //   tags: "Juan, Entrepreneurship",
-    //   description:
-    //     "I decided to leave the project I've been working on for the last 8 months to focus on offering web development services as a freelancer. Juan made me realize that we were building a solution to a problem that neither we nor anyone close to us has.",
-    //   color: "text-[#FCE72D]",
-    //   image: {
-    //     src: "/images/juan-gabriel.png",
-    //     alt: "A sad flower because the sun is setting",
-    //     width: 1024,
-    //     height: 1024,
-    //   },
-    //   creation: {
-    //     model: "DALL-E 2",
-    //     prompt:
-    //       "A cute baby snake opening a new shoe store, the snake is happy and has a smile in his face, the background has a lot of sneakers, high detail, 3D digital art",
-    //     generations: "5",
-    //     cost: "$0.65 USD",
-    //   },
-    // },
+    {
+      date: "Tuesday, September 6, 2022",
+      title: "Very happy with Stable Diffusion",
+      tags: "Stable Diffusion",
+      description:
+        "Until yesterday I was using DreamStudio (paid option), but finally I set up the colab notebook and now I can generate images for free!",
+      color: "text-[#DAC4A3]",
+      image: {
+        src: "/images/galaxy.png",
+        alt: "A man drifting away in the abyss of a spiral galaxy.",
+        width: 1024,
+        height: 1024,
+      },
+      creation: {
+        model: "Stable Diffusion",
+        prompt:
+          "Cinematic portrait of a man drifting away in the abyss of a spiral galaxy, oil on canvas, masterpiece, trending on artstation, featured on pixiv, cinematic composition, dramatic pose, beautiful lighting, sharp details, hyper-detailed, hd, hdr, 4k, 8k, art by tim hildebrandt and wayne barlowe and bruce pennington and ruan jia and larry elmore",
+        cost: "$0 USD",
+      },
+    },
+    {
+      date: "Monday, August 29, 2022",
+      title: "Mocho",
+      tags: "",
+      description:
+        "My first and only plant died today. I still don't know if I watered it too much or too little.",
+      color: "text-[#B8D1DF]",
+      image: {
+        src: "/images/mocho.png",
+        alt: "A post-apocalyptic warrior bonsai.",
+        width: 512,
+        height: 512,
+      },
+      creation: {
+        model: "Stable Diffusion",
+        prompt:
+          "A detailed portrait of a post - apocalyptic warrior bonsai, by justin gerard and greg rutkowski, digital art, realistic painting, dnd, character design, trending on artstation",
+        cost: "$0 USD",
+      },
+    },
     {
       date: "Saturday, August 20, 2022",
       title: "Getting what you want is hard",
       tags: "Paula, DALL-E",
       description:
-        "I bought my first DALL-E credits and invited Paula to create some images. Getting exactly what we were thinking of was difficult, especially because of the face filter.",
+        "I bought my first DALL-E credits and invited Paula to create some images. Getting exactly what we were thinking was difficult, especially because of the face filter.",
       color: "text-[#F9A983]",
       image: {
         src: "/images/space-cat.png",
@@ -75,7 +73,7 @@ export default function Home() {
       color: "text-[#FFC86B]",
       image: {
         src: "/images/bye-trazo.png",
-        alt: "A sad flower because the sun is setting",
+        alt: "A cute baby snake in a show store, 3d render, digital art.",
         width: 1024,
         height: 1024,
       },
@@ -108,7 +106,7 @@ export default function Home() {
         cost: "$1.30 USD",
       },
     },
-  ];
+  ]
 
   return (
     <>
@@ -132,7 +130,7 @@ export default function Home() {
                   alt="DALL-E Image"
                   priority={index === 0}
                 />
-                <div className="absolute top-0 left-0 flex h-full w-full flex-col gap-y-4 bg-[#0F0F0F]/80 p-2 text-sm opacity-0 hover:opacity-100 lg:p-6 lg:text-base">
+                <div className="absolute top-0 left-0 flex h-full w-full flex-col gap-y-4 bg-[#0F0F0F]/80 p-2 text-sm opacity-0 transition-opacity hover:opacity-100 lg:p-6 lg:text-base">
                   {Object.entries(post.creation).map(([key, value]) => (
                     <div key={key} className="flex flex-row gap-x-3">
                       <span className={`font-bold capitalize ${post.color}`}>
@@ -161,9 +159,9 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          );
+          )
         })}
       </div>
     </>
-  );
+  )
 }
