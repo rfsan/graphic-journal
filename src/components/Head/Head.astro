@@ -1,0 +1,38 @@
+---
+export interface Props {
+  og: {
+    title: string
+    description: string
+    url: string
+  }
+}
+
+const { og } = Astro.props
+---
+
+<title>{og.title}</title>
+<link
+  rel="icon"
+  href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧙‍♂️</text></svg>"
+/>
+<meta
+  name="description"
+  content="Rafael's Graphic Journal. I use Text-to-Image models to create an image for my daily entries."
+/>
+{/* OG */}
+<meta property="og:type" content="website" />
+<meta property="og:title" content={og.title} />
+<meta property="og:description" content={og.description} />
+<meta property="og:url" content={og.url} />
+{/* OG Image */}
+<meta
+  property="og:image"
+  content="https://graphic-journal.vercel.app/images/preview.jpg"
+/>
+<meta
+  property="image"
+  content="https://graphic-journal.vercel.app/images/preview.jpg"
+/>
+<meta property="og:image:width" content="716" />
+
+<meta property="og:image:height" content="716" />
