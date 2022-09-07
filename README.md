@@ -1,10 +1,20 @@
 # Graphic Journal
 
+## In this project
+
+- Head Component
+
 ## TODO
 
-- Add pagination.
+- (Hard) Crear una versión menos pesada de la última imagen para `og:image`.
+- Cuando haya varios posts:
+  - Crear CMS.
+  - Paginación.
+- Nice para practicar:
+  - Texto de la fecha a partir de una fecha numérica.
 
-## Tools
+## Ideas
 
-- To create the preview image for og:image: https://www.reduceimages.com/ 
-- To extract a color palette for the image title: https://coolors.co/image-picker
+- Final de BCS
+- Dulce
+- Quiero publicar imágenes y no paralizarme pensando demasiado qué voy a generar. Empezar ya y mejorar en el camino.
