@@ -74,7 +74,7 @@ export const posts: Post[] = [
       "I decided to leave the project I've been working on for the last 8 months to focus on offering web development services as a freelancer. Juan made me realize that we were building a solution to a problem that neither we nor anyone close to us has.",
     color: "text-[#FFC86B]",
     image: {
-      src: "/images/bye-trazo.png",
+      src: "/images/snake.png",
       alt: "A cute baby snake in a show store, 3d render, digital art.",
       width: 1024,
       height: 1024,
