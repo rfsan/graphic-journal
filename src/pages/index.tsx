@@ -61,6 +61,19 @@ export default function Home({ posts }: HomePageProps) {
           )
         })}
       </div>
+      <footer className="mx-auto max-w-screen-xl px-4 lg:px-8">
+        <div className="border-t border-neutral-600 py-6 text-center text-sm text-neutral-100">
+          Made by{" "}
+          <a
+            href="https://rfsan.co/"
+            target="_blank"
+            rel="noreferrer"
+            className="underline"
+          >
+            Rafael S.
+          </a>
+        </div>
+      </footer>
     </>
   )
 }
