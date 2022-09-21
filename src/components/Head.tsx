@@ -1,4 +1,4 @@
-import NextHead from "next/head";
+import NextHead from "next/head"
 
 export const Head = () => {
   const { og } = {
@@ -8,7 +8,7 @@ export const Head = () => {
         "Moments of my life accompanied by images created with Text-to-Image models",
       url: "https://graphic-journal.vercel.app/",
     },
-  };
+  }
 
   return (
     <NextHead>
@@ -41,9 +41,9 @@ export const Head = () => {
         property="image"
         content="https://graphic-journal.vercel.app/images/preview.jpg"
       />
-      <meta property="og:image:width" content="716" />
+      <meta property="og:image:width" content="512" />
 
-      <meta property="og:image:height" content="716" />
+      <meta property="og:image:height" content="512" />
     </NextHead>
-  );
-};
+  )
+}

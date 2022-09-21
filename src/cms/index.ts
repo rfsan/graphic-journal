@@ -1,6 +1,25 @@
 import { Post } from "@/types"
 
 export const posts: Post[] = [
+  // 6
+  {
+    date: "Thursday, September 15, 2022",
+    title: "Driving",
+    tags: [],
+    description: "Today I started my driving lessons.",
+    color: "text-[#93BEBD]",
+    image: {
+      src: "/images/driving.png",
+      alt: "A digital painting of a yellow car.",
+      width: 1024,
+      height: 1024,
+    },
+    details: {
+      model: "Stable Diffusion",
+      prompt:
+        "A man riding a car in the city at night, by conrad roset, greg rutkowski and makoto shinkai, trending on artstation",
+    },
+  },
   // 5
   {
     date: "Tuesday, September 6, 2022",

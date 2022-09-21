@@ -62,7 +62,7 @@ export default function Home({ posts }: HomePageProps) {
         })}
       </div>
       <footer className="mx-auto max-w-screen-xl px-4 lg:px-8">
-        <div className="border-t border-neutral-600 py-6 text-center text-sm text-neutral-100">
+        <div className="border-t border-neutral-600 py-6 text-center text-sm text-[#A4A4A4]">
           Made by{" "}
           <a
             href="https://rfsan.co/"
@@ -70,7 +70,7 @@ export default function Home({ posts }: HomePageProps) {
             rel="noreferrer"
             className="underline"
           >
-            Rafael S.
+            Rafael Sanabria
           </a>
         </div>
       </footer>
