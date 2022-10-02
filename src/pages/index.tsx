@@ -12,6 +12,7 @@ export default function Home({ posts }: HomePageProps) {
       <Header />
       <div className="mx-auto max-w-screen-xl px-4 pb-24 lg:px-8">
         {posts.map((post, index) => {
+          const date = new Date(post.date)
           return (
             <div
               key={post.title}
@@ -51,7 +52,13 @@ export default function Home({ posts }: HomePageProps) {
                 }`}
               >
                 <span className="block text-sm font-semibold uppercase text-[#DADADA] lg:text-base">
-                  {post.date}
+                  {date.toLocaleDateString("en", {
+                    weekday: "long",
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                    timeZone: "UTC",
+                  })}
                 </span>
                 <h2
                   className={`mt-4 block font-serif text-3xl font-bold sm:mt-6 lg:mt-7 lg:text-5xl lg:leading-tight ${post.color}`}

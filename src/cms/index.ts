@@ -3,7 +3,7 @@ import { Post } from "@/types"
 export const posts: Post[] = [
   // 6
   {
-    date: "Thursday, September 15, 2022",
+    date: "2022-09-15",
     title: "Driving",
     tags: [],
     description: "Today I started my driving lessons.",
@@ -22,7 +22,7 @@ export const posts: Post[] = [
   },
   // 5
   {
-    date: "Tuesday, September 6, 2022",
+    date: "2022-09-06",
     title: "Very happy with Stable Diffusion",
     tags: ["Stable Diffusion"],
     description:
@@ -43,7 +43,7 @@ export const posts: Post[] = [
   },
   // 4
   {
-    date: "Monday, August 29, 2022",
+    date: "2022-08-29",
     title: "Mocho",
     tags: [],
     description:
@@ -64,7 +64,7 @@ export const posts: Post[] = [
   },
   // 3
   {
-    date: "Saturday, August 20, 2022",
+    date: "2022-08-20",
     title: "Getting what you want is hard",
     tags: ["Paula", "DALL-E"],
     description:
@@ -86,7 +86,7 @@ export const posts: Post[] = [
   },
   // 2
   {
-    date: "Tuesday, August 16, 2022",
+    date: "2022-08-16",
     title: "Focus",
     tags: ["Juan", "Entrepreneurship"],
     description:
@@ -108,7 +108,7 @@ export const posts: Post[] = [
   },
   // 1
   {
-    date: "Friday, August 12, 2022",
+    date: "2022-08-12",
     title: '"Fuck off" and kiss me',
     tags: ["Paula", "Succession"],
     description:
