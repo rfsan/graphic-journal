@@ -6,7 +6,7 @@ export const posts: Post[] = [
     date: "2022-09-15",
     title: "Driving",
     tags: [],
-    description: "Today I started my driving lessons.",
+    description: "After many years, today I decided to practice driving again",
     color: "text-[#93BEBD]",
     image: {
       src: "/images/driving.png",
