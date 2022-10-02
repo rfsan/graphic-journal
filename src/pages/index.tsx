@@ -15,12 +15,16 @@ export default function Home({ posts }: HomePageProps) {
           return (
             <div
               key={post.title}
-              className={`flex min-h-screen flex-col items-center pt-24 sm:gap-5 sm:py-24 lg:gap-16 ${
+              className={`flex min-h-screen flex-col items-center pt-24 sm:py-24 ${
                 index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
               }`}
             >
               {/* Image */}
-              <div className="relative w-full">
+              <div
+                className={`relative w-full ${
+                  index % 2 === 0 && "sm:mr-6 lg:mr-16"
+                }`}
+              >
                 <Image
                   src={post.image.src}
                   width={post.image.width}
@@ -29,9 +33,9 @@ export default function Home({ posts }: HomePageProps) {
                   alt={post.image.alt}
                   priority={index === 0}
                 />
-                <div className="absolute top-0 left-0 flex h-full w-full flex-col gap-y-4 bg-[#0F0F0F]/80 p-2 text-sm opacity-0 transition-opacity hover:opacity-100 lg:p-6 lg:text-base">
+                <div className="absolute top-0 left-0 flex h-full w-full flex-col space-y-4 bg-[#0F0F0F]/80 p-2 text-sm opacity-0 transition-opacity hover:opacity-100 lg:p-6 lg:text-base">
                   {Object.entries(post.details).map(([key, value]) => (
-                    <div key={key} className="flex flex-row gap-x-3">
+                    <div key={key} className="flex flex-row space-x-3">
                       <span className={`font-bold capitalize ${post.color}`}>
                         {key}
                       </span>
@@ -41,7 +45,11 @@ export default function Home({ posts }: HomePageProps) {
                 </div>
               </div>
               {/* Content */}
-              <div className="mt-6 w-full sm:mt-0">
+              <div
+                className={`mt-6 w-full sm:mt-0 ${
+                  index % 2 !== 0 && "sm:mr-6 lg:mr-16"
+                }`}
+              >
                 <span className="block text-sm font-semibold uppercase text-[#DADADA] lg:text-base">
                   {post.date}
                 </span>
